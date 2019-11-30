@@ -1,0 +1,375 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+li {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  padding: 3rem 0;
+  z-index: 1;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left a {
+  background: #c94b4b;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4b134f, #c94b4b);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 700;
+  font-size: 3.5rem;
+  letter-spacing: 0.09rem;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchbox {
+  display: flex;
+  align-items: center;
+  width: 12rem;
+  background-color: #000;
+  padding: 0.7rem;
+  border: 0.08rem solid rgba(255, 255, 255, 0.2);
+  border-radius: 10rem;
+}
+.searchbox:hover {
+  border: 0.08rem solid red;
+}
+
+.searchicon {
+  padding: 0 0.6rem 0 0.3rem;
+}
+
+input {
+  background-color: #000;
+  color: white;
+  border: none;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+input::placeholder {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: white;
+  letter-spacing: 0.08rem;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  padding-left: 3rem;
+}
+
+.social {
+  padding: 0rem 0.08rem;
+  margin-right: 1.5rem;
+}
+
+.create-button {
+  background: #c94b4b;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4b134f, #c94b4b);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 0.6rem 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+  border: 0.1rem solid none;
+  letter-spacing: 0.1rem;
+  border-radius: 2rem;
+}
+.create-button:hover {
+  color: blue;
+}
+
+body {
+  background-color: #000;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  margin-top: 8rem;
+}
+
+.hero-flex {
+  display: flex;
+}
+
+.left-categories {
+  padding: 1rem 0;
+  width: 17%;
+}
+
+.left-categories-items {
+  position: fixed;
+  padding-top: 1rem;
+}
+
+.category {
+  display: block;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 0.06rem;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  border-radius: 2rem;
+  padding: 0.4rem 0.3rem;
+}
+
+.home {
+  color: #0df16c;
+}
+
+.right-categories {
+  width: 83%;
+}
+
+.subcategories {
+  width: 100%;
+  background-color: black;
+}
+
+.subcategories-items {
+  position: fixed;
+  right: 0;
+  left: 20%;
+  background-color: black;
+  padding: 2rem 0 2rem 0;
+  z-index: 1;
+}
+
+.subcategory {
+  background-color: rgba(61, 57, 57, 0.2);
+  border: 0.08rem solid rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  color: white;
+  margin-right: 1.3rem;
+}
+
+.titles-div {
+  position: relative;
+  width: 100%;
+}
+
+.titles {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding-top: 7rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+}
+
+.title {
+  color: black;
+  background-color: #0df16c;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.06rem;
+  padding: 1rem 0rem;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 0;
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  letter-spacing: 0.06rem;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.footer {
+  text-align: right;
+}
+
+.footer-items {
+  color: white;
+  padding-left: 1.5rem;
+  letter-spacing: 0.08rem;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.articles-div {
+  position: relative;
+  width: 100%;
+}
+
+.articles {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.left-arrow {
+  position: fixed;
+  right: 0;
+  left: 20%;
+  background-color: black;
+  z-index: 1;
+  padding: 1rem 0;
+}
+
+.article-title {
+  color: white;
+  background-color: #000;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.06rem;
+  padding: 4rem 0 2rem 0;
+}
+
+.dp {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.dp-pic {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  padding: 0.08rem;
+  border: 0.1rem solid aquamarine;
+}
+
+.dp-name {
+  color: white;
+  padding: 0 1rem 1rem 1rem;
+  letter-spacing: 0.08rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.dp-date {
+  color: rgba(255, 255, 255, 0.2);
+  padding: 0 1rem;
+  letter-spacing: 0.08rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.article-body {
+  color: white;
+  background-color: black;
+  font-size: 1.2rem;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+  line-height: 2;
+  padding: 1rem 0;
+}
+
+.article-body-subtitle {
+  color: white;
+  background-color: black;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  line-height: 2;
+  padding: 1rem 0;
+}
+
+/*# sourceMappingURL=style.css.map */

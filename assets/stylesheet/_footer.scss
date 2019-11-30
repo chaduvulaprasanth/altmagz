@@ -4,7 +4,7 @@ footer{
     left: 0;
     right: 0;
     padding: 2rem 0;
-    background-color: black;
+    background-color: $base-color;
     color: $text-color;
     display: grid;
     grid-template-columns: repeat(2, 1fr);

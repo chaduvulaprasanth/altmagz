@@ -35,7 +35,7 @@ main{
 }
 .subcategories{
     width: 100%;
-    background-color: black;
+    background-color: $base-color;
 }
 .subcategories-items{
    position: fixed;
@@ -68,7 +68,7 @@ main{
     grid-gap: 3rem;
 }
 .title{
-    color: black;
+    color: $base-color;
     background-color: $primary-color;
     font-size: 1.2rem;
     font-weight: 300;
